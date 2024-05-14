@@ -34,6 +34,30 @@ Explanation: In the first test case, the array is [2, 4, 7, 2, 7]. Here, the num
 10
 Explanation: In the second test case, the array is [1, 3, 1, 3, 6, 6, 7, 10, 7]. Here, the numbers 1, 3, 6, and 7 are present twice, and the number 10 is present only once. So, the unique number in this array is 10.
  */
-public class FindUniqueNumber {
-    
+===========
+ sample answer 1
+
+ public class FindUniqueNumber {
+
+    public static void uniqueNumber(int[] arr) {
+
+        for (int i = 0; i < arr.length; i++) {
+            int count = 0;
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    count++;
+                }
+            }
+            if (count == 1) {
+                System.out.println(count);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] arr = { 1, 2, 3, 2, 1 };
+        uniqueNumber(arr);
+    }
+
 }
+

@@ -32,5 +32,5 @@ Sample Output 2 :
 1 3 2
  */
 public class ArrangeNumberInArray {
-    
+    int n =arr.lenght;
 }
